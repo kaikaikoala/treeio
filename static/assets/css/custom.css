@@ -36,6 +36,11 @@ header {
     -o-background-size: cover;
 }
 
+ .org{
+
+    background-image: url('../images/bamboo.jpg');
+}
+
 header .header-content {
     position: relative;
     width: 100%;
@@ -43,7 +48,14 @@ header .header-content {
     text-align: center;
 }
 
-header .header-content .header-content-inner h1 {
+header .header-content2 {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px 70px;
+    text-align: center;
+}
+
+header .header-content .header-content-inner .header-content2 h1 {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 50px;
@@ -195,6 +207,13 @@ header .header-content .header-content-inner p {
     color: #fff;
     background-color: #222;
 	}
+
+.page-footer .small-print-green {
+    padding: 50px 0 40px;
+    font-weight: 300;
+    color: #fff;
+    background-color: yellowgreen;
+    }
 
 .text-light {
     color: rgba(255,255,255,.7);
@@ -520,11 +539,11 @@ div.button.right{
 }
 
 table tr.week {
-    height:90px;
+    height:70px;
 }
 
 .day {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     padding-left: 4px;
 }
@@ -539,6 +558,33 @@ a.hidden {
     text-decoration: none;
     color:white;
 }
+
+.black_overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+.white_content {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
+
 
 
 
