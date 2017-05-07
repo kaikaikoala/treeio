@@ -431,3 +431,16 @@ img::-moz-selection {
 .bg-primary {
     background-color: yellowgreen;
 }
+
+.login { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:500px;
+	height:300px;
+}
+
+.login h3 {
+    color: yellowgreen;
+}
