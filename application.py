@@ -12,6 +12,11 @@ mysql.init_app(application)
 def index():
     return application.send_static_file("index.html")
 
+
+@application.route("/orglogin")
+def orgLogin():
+    return application.send_static_file("orgLogin.html")
+
 if __name__ == "__main__":
     application.debug=True
     application.run()
