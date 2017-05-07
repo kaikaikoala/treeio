@@ -80,16 +80,14 @@ Although you can use them, for a more unique website, replace these images with 
 
 <div class="signup">
     <h1>Register Your Organization</h1>
-    <form method="post" action="/signUpProcess/org">
+    <form method="POST" action="/signUpProcess/org">
         <ul>
             <li>
                 <h3>Tell us about your school</h3>
                 <p>School Name:
-                <input type="text" id="schoolname" name="schoolname" placeholder="Ohlone College" required="required"/></p>
-                <p>Street Address:
-                <input type="text" id="address" name="address" placeholder="188 Pine" required="required"/>
-                </p>
-
+                <input type="text" id="name" name="schoolname" placeholder="Ohlone College" required="required"/></p>
+                <p>Subdomain (shortened name -- all lower case, max 15 characters):
+                <input type="text" id="shortname" name="shortname" placeholder="ohlone" required="required"/></p>
                 <p>City:
                 <input type="text" id="city" name="city" placeholder="Redwood City" required="required"/>
                 </p>
@@ -97,26 +95,25 @@ Although you can use them, for a more unique website, replace these images with 
                 <input type="text" id="state" name="state"  placeholder="Green State" required="required"/>
                 </p>
                 <p>Postal Code:
-                <input type="text" id="postalcode" name="postalcode"  placeholder="97546" required="required"/>
+                <input type="text" id="zipcode" name="zipcode"  placeholder="97546" required="required"/>
                 </p>
             </li>
     	    <li>
-                <h3>Please register your oragnization email</h3>
-                <input type="text" id="e" name="e" placeholder="Email" required="required" />
+                <h3>Please register your organization email</h3>
+                <input type="text" id="email" name="email" placeholder="Email" required="required" />
             </li>
             
             <li>
                 <h3>Please create a password</h3>
-                <input type="password" id="p" name="p" placeholder="Password" required="required" />
+                <input type="password" id="password" name="password" placeholder="Password" required="required" />
                 <h3>Please confirm your password</h3>
                 <input type="password" id="2p" name="2p" placeholder="Password" required="required" />
             </li>
         </ul>
-        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        <button type="submit" id="form-submit" class="btn btn-primary btn-lg">Submit</button>
         <p><a href="orgLogin.html">Or get administrative access for your organization</a></p>
     </form>
 </div>
-  
 
     <!-- jQuery -->
     <script src="static/assets/js/jquery-1.11.3.min.js"></script>
@@ -133,7 +130,23 @@ Although you can use them, for a more unique website, replace these images with 
     <!-- Custom Javascript -->
     <script src="static/assets/js/custom.js"></script>
     <script src="assets/js/custom.js"></script>
+<!--
+    <script>
+        $(document).ready(function(){
+            $('button#form-submit').click(function(){
+                $.ajax({
+                    url:'/selectSchedule',
+                    method: "POST",
+                    data : {
+                        which : 'org'
+                    }
+                })
+            }
+            }
+        })
+    </script>
 
+-->
 </body>
 
 </html>
