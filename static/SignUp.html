@@ -77,14 +77,18 @@ Although you can use them, for a more unique website, replace these images with 
     </nav>
 
 
-<div class="login">
-	<h1>Login</h1>
-    <h3>Administrative Access</h3>
-    <form method="post" action="/orglogin">
-    	<input type="text" id="e" name="e" placeholder="Email" required="required" />
-        <input type="password" id="p" name="p" placeholder="Password" required="required" />
+<div class="signup">
+    <h1>Create Your Own Branch</h1>
+    <form method="post" action="/signup">
+	<ul>
+		<li><h3>Parent Oragnization</h3>
+    		<input type="text" id="nameclub" name="nameclub" placeholder="Organization" required="required" /></li>
+		<li><h3>Club Name</h3>
+    		<input type="text" id="nameclub" name="nameclub" placeholder="Club" required="required" /></li>
+		<li><h3>Enter Your Club's Email</h3>
+    	<input type="text" id="eclub" name="eclub" placeholder="Email" required="required" /></li>
+	</ul>
         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-        <p><a href="orgSignUp.html">Or register your organization</a></p>
     </form>
 </div>
 <footer></footer>

@@ -13,3 +13,19 @@ Main.html
 
 ### MySQL Database ###
 To run the application locally, you must install  MySQL Database and import the treeio.sql image. In the application.py file, change the login credential to your credentials.
+
+###Password ID's###
+club feilds have ths suffix club
+password p
+email e
+city city
+state state
+postal code postalcode
+school name schoolname
+address address
+
+###actions###
+Organization:
+orgsignup orglogin
+Club:
+signup login
