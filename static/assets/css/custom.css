@@ -51,7 +51,7 @@ header .header-content .header-content-inner h1 {
 }
 
 header .header-content .header-content-inner p {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     font-size: 16px;
     font-weight: 300;
     color: rgba(255,255,255,.7);
@@ -242,6 +242,7 @@ header .header-content .header-content-inner p {
     .navbar-default .navbar-header .navbar-brand {
         color: rgba(255,255,255,.7);
         letter-spacing: 0.5em;
+        vertical-align: middle;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -444,3 +445,4 @@ img::-moz-selection {
 .login h3 {
     color: yellowgreen;
 }
+
