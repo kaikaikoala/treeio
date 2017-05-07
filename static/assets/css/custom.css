@@ -28,7 +28,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url('../images/header.jpg');
+    background-image: url('../images/peeps.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -198,9 +198,7 @@ header .header-content .header-content-inner p {
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+
 }
 
 .navbar-default .navbar-header .navbar-brand {
@@ -225,18 +223,18 @@ header .header-content .header-content-inner p {
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
     color: yellowgreen!important;
-    background-color: transparent;
+    background-color: #fff;
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
-    background-color: transparent;
+    background-color: #fff;
 }
 
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
-        background-color: transparent;
+        background-color: #fff;
     }
 
     .navbar-default .navbar-header .navbar-brand {
