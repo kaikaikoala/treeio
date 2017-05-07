@@ -12,11 +12,11 @@ mysql.init_app(application)
 def index():
     return application.send_static_file("index.html")
 
-@application.route("/orgsignup", method="post")
+@application.route("/orgsignup", methods="post")
 def orgSignUp():
     return application.send_static_file("orgSignUp.html")
 
-@application.route("/orglogin", method="post")
+@application.route("/orglogin", methods="post")
 def orgLogin():
     return application.send_static_file("orgLogin.html")
 
