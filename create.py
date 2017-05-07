@@ -60,3 +60,16 @@ def createEntry(info,signuptype,mysql):
     cursor.close()
     connection.close()
     return True
+
+def checkLogin(uname,password,what,mysql):
+    connection = mysql.connect()
+    cursor = connection.cursor()
+    if what == "org":
+        cursor.execute("SELECT COUNT(*) FROM organizations WHERE email=%s AND password=%s",(uname,password))
+    elif what == "mem":
+        cursor.execute("SELECT COUNT(*) FROM memberss WHERE email=%s AND password=%s",(uname,password))
+    
+    count = cursor.fetchone()[0];
+    if count == 0:
+        return False
+    return True
