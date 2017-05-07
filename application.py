@@ -7,6 +7,7 @@ application.config['MYSQL_DATABASE_HOST'] = "localhost"
 application.config['MYSQL_DATABASE_USER'] = "root"
 application.config['MYSQL_DATABASE_PASSWORD'] = "password"
 mysql.init_app(application)
+login_manager.init_app(app)
 
 @application.route("/")
 def index():
