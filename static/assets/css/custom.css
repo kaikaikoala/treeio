@@ -444,3 +444,16 @@ img::-moz-selection {
     color: yellowgreen;
 }
 
+.signup {
+    position: absolute;
+	top: 20%;
+	left: 30%;
+	margin: -150px 0 0 -150px;
+	width:800px;
+	height:300px;
+
+}
+
+.signup ul {
+    list-style-type: none ;
+}

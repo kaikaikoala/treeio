@@ -11,7 +11,7 @@ Although you can use them, for a more unique website, replace these images with 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Log In</title>
+    <title>Sign Up</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -77,14 +77,42 @@ Although you can use them, for a more unique website, replace these images with 
     </nav>
 
 
-<div class="login">
-	<h1>Login</h1>
-    <h3>Administrative Access</h3>
-    <form method="post" action="/orglogin">
-    	<input type="text" name="e" placeholder="Email" required="required" />
-        <input type="password" name="p" placeholder="Password" required="required" />
+<div class="signup">
+    <h1>Register Your Organization</h1>
+    <form method="post" action="/orgsignup">
+        <ul>
+            <li>
+                <h3>Tell us about your school</h3>
+                <p>School Name:
+                <input type="text" id="schoolname" name="schoolname" placeholder="School Name" required="required"/></p>
+                <p>Street Address:
+                <input type="text" id="address" name="address" placeholder="188 Pine" required="required"/>
+                </p>
+
+                <p>City:
+                <input type="text" id="cit" name="city" placeholder="Redwood City" required="required"/>
+                </p>
+                <p>State/Province:
+                <input type="text" id="state" name="state"  placeholder="Green State" required="required"/>
+                </p>
+                <p>Postal Code:
+                <input type="text" id="postalcode" name="postalcode"  placeholder="97546" required="required"/>
+                </p>
+            </li>
+    	    <li>
+                <h3>Please register your oragnization email</h3>
+                <input type="text" id="e" name="e" placeholder="Email" required="required" />
+            </li>
+            
+            <li>
+                <h3>Please create a password</h3>
+                <input type="password" id="p" name="p" placeholder="Password" required="required" />
+                <h3>Please confirm your password</h3>
+                <input type="password" id="2p" name="2p" placeholder="Password" required="required" />
+            </li>
+        </ul>
         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-        <p><a href="orgSignUp.html">Or register your organization</a></p>
+        <p><a href="orgLogin.html">Or get administrative access for your organization</a></p>
     </form>
 </div>
   
@@ -106,3 +134,5 @@ Although you can use them, for a more unique website, replace these images with 
     <script src="assets/js/bootstrap.min.js"></script>
 
 </body>
+
+</html>
