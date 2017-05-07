@@ -11,16 +11,14 @@ Although you can use them, for a more unique website, replace these images with 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>School List</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="static/assets/images/favicon.ico" type="image/x-icon">
+    <title>Member Log In</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -78,13 +76,33 @@ Although you can use them, for a more unique website, replace these images with 
         </div><!-- /.container -->
     </nav>
 
-<div class="schoolList">
-    <table>
-        <h1>List of Schools</h1>
-        <ol>
-        <li><a href="/publicSchoolPage">Ohlone College</a></li>
-        </ol>
-    </table>
+
+<div class="login">
+	<h1>Edit</h1>
+    <h3>Club Access</h3>
+    <form method="post" action="/login">
+    	<input type="text" id="eclub" name="eclub" placeholder="Email" required="required" />
+        <input type="password" id="pclub" name="pclub" placeholder="Password" required="required" />
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </form>
+    <p><a href="passwordRetrevial.html">Forgot your password</a></p>
 </div>
-</body>
-</html>
+<footer></footer>
+    <!-- jQuery -->
+    <script src="static/assets/js/jquery-1.11.3.min.js"></script>
+    <script src="../assets/js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/assets/js/jquery.easing.min.js"></script>
+
+    <script src="../assets/js/bootstrap.min.js"></script>
+    
+    <!-- Custom Javascript -->
+    <script src="static/assets/js/custom.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+</body></html>

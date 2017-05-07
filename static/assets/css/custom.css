@@ -41,6 +41,11 @@ header {
     background-image: url('../images/bamboo.jpg');
 }
 
+.club{
+
+    background-image: url('../images/logo.png');
+}
+
 header .header-content {
     position: relative;
     width: 100%;
