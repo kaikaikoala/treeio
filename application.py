@@ -33,6 +33,10 @@ def memberPortal(organization,member):
 def orgSignUp():
     return application.send_static_file("orgSignUp.html")
 
+@application.route("/SignUp")
+def memSignUp():
+    return application.send_static_file("SignUp.html")
+
 @application.route("/signUpProcess/<which>",methods=["POST"])
 def signUpProcess(which):
     info = {}
