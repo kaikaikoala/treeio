@@ -36,16 +36,6 @@ header {
     -o-background-size: cover;
 }
 
- .org{
-
-    background-image: url('../images/bamboo.jpg');
-}
-
-.club{
-
-    background-image: url('../images/logo.png');
-}
-
 header .header-content {
     position: relative;
     width: 100%;
@@ -165,17 +155,6 @@ header .header-content .header-content-inner p {
     vertical-align: middle;
 }
 
-.item-1 {
-	background: url('../images/writing.jpg');
-	}
-	
-.item-2 {
-	background: url('../images/concert.jpg');
-	}
-	
-.item-3 {
-	background: url('../images/pencil_sharpener.jpg');
-	}
 
 		
 .item-1,
@@ -436,7 +415,7 @@ fieldset[disabled] .btn-primary.active {
 
 
 .btn {
-    border-radius: 300px;
+    border-radius: 3000px;
     text-transform: uppercase;
 }
 
@@ -474,265 +453,36 @@ img::-moz-selection {
     background-color: yellowgreen;
 }
 
-.login { 
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -150px 0 0 -150px;
-	width:500px;
-	height:300px;
+/*added*/
+
+/*sign-in*/
+#sign-in{
+	padding-top: 100px;
+	margin:auto;
+}
+#sign-up{
+	padding-top: 100px;
+	margin:auto;
 }
 
-.login h3 {
-    color: yellowgreen;
+.btn-social-icon{
+	background-color: #fff;
 }
 
-
-.signup {
-    position: absolute;
-	top: 30%;
-	left: 30%;
-	margin: -150px 0 0 -150px;
-	width:800px;
-	height:300px;
-
+.contact-break{
+	height: 5px;
+	background-color: #fff;
+	margin: 30px ;
 }
 
-.signup ul {
-    list-style-type: none ;
+#org{
+	background-color: #8bc34a;
 }
 
-img.logo {
-    max-height: 25px;
-    display: inline-block;
+h1{
+	color:yellowgreen;
 }
 
-.week{
-    height: 100px;
+.news-card li{
+	color:yellowgreen;
 }
-
-.calendar {
-    border: 2px solid black;
-}
-
-table td.monthCell{
-    text-align: center;
-    vertical-align: middle;
-    height: 70px;
-}
-
-div.month{
-    display: inline;
-    margin: 0 auto;
-    font-weight: bold;
-    letter-spacing: 5px;
-    font-size: 28px;
-}
-
-div.button{
-    width:50px;
-    display: inline;
-    border : none;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: bold;
-    font-size:36px;
-    padding-bottom: 10px;
-}
-
-div.button.left{
-    float: left;
-    padding-left: 20px;
-}
-
-div.button.right{
-    float: right;
-    padding-right: 20px;
-}
-
-table tr.week {
-    height:70px;
-}
-
-.day {
-    text-align: center;
-    font-weight: bold;
-    padding-left: 4px;
-}
-
-div.event {
-    font-size: 10px;
-    border:1px solid white;
-    padding: 1px 1px 1px 1px;
-}
-
-a.hidden {
-    text-decoration: none;
-    color:white;
-}
-
-.black_overlay {
-  display: none;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: 1001;
-  -moz-opacity: 0.8;
-  opacity: .80;
-  filter: alpha(opacity=80);
-}
-.white_content {
-  display: none;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
-  padding: 16px;
-  background-color: white;
-  z-index: 1002;
-  overflow: auto;
-}
-
-
-
-
-.schoolList {
-    position: fixed;
-    top: 200px;
-    left: 50px;
-    width: 300px;
-
-}
-
-
-
-body.schoolList {
-    background: #fafafa url(http://jackrugile.com/images/misc/noise-diagonal.png);
-    color: #444;
-    font: 100%/30px 'Helvetica Neue', helvetica, arial, sans-serif;
-    text-shadow: 0 1px 0 #fff;
-}
-
-strong.schoolList {
-    font-weight: bold; 
-}
-
-em.schoolList {
-    font-style: italic; 
-}
-
-table.schoolList {
-    background: #f5f5f5;
-    border-collapse: separate;
-    box-shadow: inset 0 1px 0 #fff;
-    font-size: 12px;
-    line-height: 24px;
-    margin: 30px auto;
-    text-align: left;
-    width: 800px;
-}   
-
-th.schoolList {
-    background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
-    border-left: 1px solid #555;
-    border-right: 1px solid #777;
-    border-top: 1px solid #555;
-    border-bottom: 1px solid #333;
-    box-shadow: inset 0 1px 0 #999;
-    color: #fff;
-  font-weight: bold;
-    padding: 10px 15px;
-    position: relative;
-    text-shadow: 0 1px 0 #000;  
-}
-
-th:after.schoolList {
-    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
-    content: '';
-    display: block;
-    height: 25%;
-    left: 0;
-    margin: 1px 0 0 0;
-    position: absolute;
-    top: 25%;
-    width: 100%;
-}
-
-th:first-child.schoolList {
-    border-left: 1px solid #777;    
-    box-shadow: inset 1px 1px 0 #999;
-}
-
-th:last-child.schoolList {
-    box-shadow: inset -1px 1px 0 #999;
-}
-
-td.schoolList {
-    border-right: 1px solid #fff;
-    border-left: 1px solid #e8e8e8;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #e8e8e8;
-    padding: 10px 15px;
-    position: relative;
-    transition: all 300ms;
-}
-
-td:first-child.schoolList {
-    box-shadow: inset 1px 0 0 #fff;
-}   
-
-td:last-child.schoolList {
-    border-right: 1px solid #e8e8e8;
-    box-shadow: inset -1px 0 0 #fff;
-}   
-
-tr.schoolList {
-    background: url(http://jackrugile.com/images/misc/noise-diagonal.png);  
-}
-
-tr:nth-child(odd) td #schoolList {
-    background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);  
-}
-
-tr:last-of-type td {
-    box-shadow: inset 0 -1px 0 #fff; 
-}
-
-tr:last-of-type td:first-child {
-    box-shadow: inset 1px -1px 0 #fff;
-}   
-
-tr:last-of-type td:last-child {
-    box-shadow: inset -1px -1px 0 #fff;
-}   
-
-tbody:hover td {
-    color: transparent;
-    text-shadow: 0 0 3px #aaa;
-}
-
-tbody:hover tr:hover td {
-    color: #444;
-    text-shadow: 0 1px 0 #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

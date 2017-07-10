@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<!-- Template by Quackit.com -->
-<!-- Images by various sources under the Creative Commons CC0 license and/or the Creative Commons Zero license. 
-Although you can use them, for a more unique website, replace these images with your own. -->
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Club List</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="static/assets/images/favicon.ico" type="image/x-icon">
+    <title>TreeIO</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="assets/css/custom.css" rel="stylesheet">
+    
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,14 +23,13 @@ Although you can use them, for a more unique website, replace these images with 
 
     <!-- Custom Fonts from Google -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <script src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
     
 </head>
 
-
 <body>
-
-
-    <!-- Navigation -->
     <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Logo and responsive toggle -->
@@ -50,41 +41,31 @@ Although you can use them, for a more unique website, replace these images with 
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                	<span class="glyphicon glyphicon-tree-deciduous"></span>                	
+                  <i class="fa fa-tree"></i>
                     TreeIO
                 </a>
             </div>
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html#go_learn_more">Learn More</a>
-                    </li>
-                    <li>
-                        <a href="index.html#go_schools">Schools</a>
-                    </li>
-                    <li>
-                        <a href="index.html#go_about_us">About Us</a>
-                    </li>
-                    <li>
-                        <a href="index.html#go_contact_us">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="orgLogin.html">Sign In</a>
-                    </li>
+                    <li><a href="organize.html">Organize</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a class="btn-primary"id="btn-login" href="sign-in.html">Sign In</a></li>
                 </ul>
                 
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>
 
-<div class="schoolList">
-    <table>
-        <h1>List of Clubs</h1>
-        <ol>
-        <li><a href="/dotslash">Dot Slash Computer Science</a></li>
-        </ol>
-    </table>
-</div>
+    <section class="form row" id="sign-up">
+      <div class="col-sm-6 col-sm-offset-3">
+      <h1>Sign Up</h1>
+      <p>or <a href="sign-in.html">sign in</a></p>
+      <form role="form" class="">
+      </form>
+      </div>
+    </section>
+
 </body>
 </html>
