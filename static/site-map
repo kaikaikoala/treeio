@@ -1,9 +1,58 @@
 index
--sign in	
--sign up
--start an organization (organize)
--contact us
--about
+	navbar:
+	-a href=organize.html Organize
+	-a href=explore.html Explore
+	-a href=sign-in.html Sign In
+	-a href=sign-up.html Register
+	
+	Jumbotron
+
+	What it is
+
+	Get started Organize link
+
+	Find your club Explore link
+
+	About 
+		-why we started
+		-the developers
+	
+organize.html
+	navbar:
+
+	Explanation of how it works
+	Features:
+		News cards 	org and group
+			(labels tagged to see if they should display)
+		navbar		
+		jumbotron
+		contact
+				org 
+		Clubs list
+				group
+		officers list
+
+		Filters
+
+after sign in
+	orgview.html
+		navbar
+
+		how it works 
+
+		editor
+
+		options
+
+		create club
+
+	groupview.html is the same except no create club
+
+sign-up:
+	email
+	name
+	
+		
 
 orgview
 groupveiw

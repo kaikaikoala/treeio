@@ -475,8 +475,14 @@ img::-moz-selection {
 	margin: 30px ;
 }
 
-#org{
+#organizeHead .jumbotron{
 	background-color: #8bc34a;
+	height: 200px;
+}
+
+#organizeHead {
+	background-image: none;
+	padding-top: 50px;
 }
 
 h1{
@@ -485,4 +491,22 @@ h1{
 
 .news-card li{
 	color:yellowgreen;
+}
+
+#organizeInstructions{
+	margin-top: 0px;
+}
+
+/*sidebar*/
+.sidebar{
+	float: right;
+	margin-right: 50px;
+	width: 215px;
+}
+
+.sidebar .btn{
+	float: right;
+}
+
+#orgCanvas{
 }
