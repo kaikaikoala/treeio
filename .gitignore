@@ -1,3 +1,4 @@
 *.pyc
 *.swp
 treeio
+.DS_Store
