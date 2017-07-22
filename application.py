@@ -2,8 +2,11 @@ from flask import Flask, request, session, redirect, url_for
 from flaskext.mysql import MySQL
 import create
 import hashlib, os
+from flask_login import LoginManager,UserMixin
 
 application = Flask(__name__)
+login_manager = LoginManager()
+login_manager.init_app(application)
 mysql = MySQL()
 application.config['MYSQL_DATABASE_DB'] = "TreeIO" ###KEEP THIS THE SAME###
 application.config['MYSQL_DATABASE_HOST'] = "localhost" #change this for your computer/server
@@ -11,6 +14,7 @@ application.config['MYSQL_DATABASE_USER'] = "root" #change this for your compute
 #application.config['MYSQL_DATABASE_PASSWORD'] = "password" #change this for your computer/server
 #application.config['SECRET_KEY'] = "dotslashwootyay"
 mysql.init_app(application)
+
 
 
 
@@ -26,7 +30,7 @@ def orgSignUp():
     
 @application.route("/sign-in")
 def signIn():
-    return application.send_static_file("main-site/sign-in.html")
+    return application.send_static_file("main-site/sign-ins.html")
     
 @application.route("/sign-up")
 def signup():
@@ -38,10 +42,17 @@ def findOrg():
     
 @application.route("/login", methods=["POST"])
 def login():
+    #import pdb; pdb.set_trace()
     uname = request.form['username']
     password = hashlib.sha224(request.form['password'].encode('utf-8')).hexdigest()
-    return str(uname+password)
+    return "Logged In"
+        
+        
     
+@application.route('/explore')
+def explore():
+    return application.send_static_file('main-site/explore.html')
+
 """
 @application.route ("/organizationPortal/<organization>")
 def organizationPortal(organization):
