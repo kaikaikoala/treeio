@@ -2,3 +2,5 @@
 *.swp
 treeio
 .DS_Store
+__pycache__/
+test/

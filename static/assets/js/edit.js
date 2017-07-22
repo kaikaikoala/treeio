@@ -33,7 +33,17 @@ $(document).ready(function() {
 	/*end news card*/
 	/*contact*/
 	$("#toolboxAddContact").click(function() {
-	    #("#canvasContact").after("")
+	    $("#canvasContact").after("<div class=\"jumbotron\"><a id=\"contactFacebook\" href=\"#\">Facebook</a></div>");
+	    $("#toolboxAddContact").remove();
+	});
+	$("#tbContactApply").click(function(){
+		$("#tbContactEmail").text(($("#tbContactEmail").val()));
+		$("#tbContactPhone").text(($("#tbContactNumber").val()));
+		$("#contactFacebook").attr("href",($("#tbContactFacebook").val()));
+		$("#tbContactEmail").text(($("#tbContactTwitter").val()));
+		$("#tbContactEmail").text(($("#tbContactInstagram").val()));
+		$("#tbContactEmail").text(($("#tbContactGithub").val()));
+		$("#tbContactEmail").text(($("#tbContactWebsite").val()));
 	})
 	/*end contact*/
 	/*More Less Toggle*/

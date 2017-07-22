@@ -1,8 +1,10 @@
 from flask import Flask, request, session, redirect, url_for
 from flaskext.mysql import MySQL
 import create
-import hashlib, os
-from flask_login import LoginManager,UserMixin
+import os
+from flask_login import LoginManager
+#from flask_bcrypt import generate_password_hash, check_password_hash
+import user
 
 application = Flask(__name__)
 login_manager = LoginManager()
@@ -14,8 +16,6 @@ application.config['MYSQL_DATABASE_USER'] = "root" #change this for your compute
 #application.config['MYSQL_DATABASE_PASSWORD'] = "password" #change this for your computer/server
 #application.config['SECRET_KEY'] = "dotslashwootyay"
 mysql.init_app(application)
-
-
 
 
 @application.route("/")
